@@ -27,9 +27,14 @@ public class MainClass01 {
 		//Car클래스로 객체를 생성(new)하고 그 생성된 객체의 참조값을 car1에 대입하기 
 		car1=new Car(); //new라는 예약어와 함께 넣어준다. -> newCar()은 참조값을 의미함!(주소)
 		
-		//car1 지역 변수에 있는 참조값을 이용해서 메소드 호출하기 
+		//car1 지역 변수에 있는 참조값을 이용해서 메소드 호출하기
+		//.(dot)으로의 접근이 가능하다
 		car1.drive();
 		car1.hotHip();
+		
+		//newCar()은 참조값을 의미하므로 이런식으로 쓰는 것도 가능하다!
+		new Car().drive();
+		new Car().hotHip();
 		
 		
 	}

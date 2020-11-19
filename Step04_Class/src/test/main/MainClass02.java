@@ -18,10 +18,13 @@ public class MainClass02 {
 		//car1안에 들어있는 참조값을 이용해서 cc라는 필드에 int type의 참조값 넣어주기
 		car1.cc = 1000;
 		
+		//car2 객체를 생성해보자!
 		Car car2 = new Car();
 		car2.drive();
-		car1.name= "소나타";
-		car1.cc = 2000;
+		car2.name= "소나타";
+		car2.cc = 2000;
+		
+		
 	}
 	
 }
