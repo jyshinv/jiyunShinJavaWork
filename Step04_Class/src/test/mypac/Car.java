@@ -16,6 +16,9 @@ public class Car {
 	public int cc; 	//아무것도 넣어주지 않으면? --> 자동으로 0이 들어가진다.
 	public String name; //아무것도 넣어주지 않으면? --> 자동으로 null이 들어가진다.
 	
+	//main method에 변수를 선언해주고 아무것도 넣어주지 않으면 변수 생성이 아예 안됐다.
+	//하지만 클래스 내에 필드를 정의해주고 아무것도 넣어주지 않으면 자동으로 0과 null이 들어가진다. 
+	
 	//달리는 메소드(기능)
 	public void drive() {
 		System.out.println("달려요!");
