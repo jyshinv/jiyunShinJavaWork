@@ -3,11 +3,22 @@ package test.mypac;
 /*
 아래와 같이 설계된 클래스를 DTO(Data Transfer Object)라고 한다.
 
-[만드는 방법]
+[MemberDTO 만드는 방법]
 1. 필드의 접근 지정자는 private로 지정
 2. 기본 생성자와, 필드에 모든 값을 전달 받는 생성자 2개가 있어야 한다.
 3. 필드의 접근 메소드 setter, getter 메소드가 형식에 맞게 정의되어 있어야한다.
 (set, get + ctrl+spacr 하거나 해당 클래스내에서 우클릭 Source-Gnerate Getter/Setter로 만들어주면 된다.)
+
+[생성자의 특징]
+0. 객체를 new로 생성할 때 호출된다.
+1. 클래스 이름으로 선언한다.
+2. no return type
+3. 디포트 생성자이든, 매개변수가 있는 생성자이든 뭐든간에 아무 생성자도 없다면
+new하는 순간 자동으로 디포트 생성자가 생성된다. 따라서 new 클래스명()으로 객체 생성이 가능하다. 
+그러나 매개변수가 있는 생성자를 하나 이상 생성하면 디포트 생성자는 생성되지 않는다. 즉, new 클래스명()으로는 객체 생성을 하지 못하고 new 클래스명(인자1,~~)로만 객체 생성을 해줘야한다. 
+따라서 new 클래스명() 이런식으로도 객체를 생성하고 싶다면 디포트 생성자를 명시적으로 써주어야 한다. 
+이처럼 생성자를 여러개 만들어주는 것을 constructor overloading 이라고 한다.
+
 */
 
 public class MemberDTO {
@@ -26,8 +37,7 @@ public class MemberDTO {
 	
 	//생성자(Constructor)
 	//객체를 new 할 때 호출되는 생성자
-	//생성자(Constructor) 임
-	//생성자 특징은 리턴 type (void)가 없고 클래스명과 동일하게 작성해야 한다.
+	//생성자 특징은 리턴 type (no return type)가 없고 클래스명과 동일하게 작성해야 한다.
 	public MemberDTO(int num, String name, String addr) {
 		System.out.println("MemberDto()생성자가 호출됨!");
 		 //this.num, this.name, this.addr에 아무것도 없음 0nullnull이 출려될것임

@@ -39,6 +39,7 @@ public class MainClass01 {
 		float e = 10.1f;
 		double f = 10.1d;
 		double g = 10.1;
+		long l = 1000L;
 		
 	}
 }

@@ -5,7 +5,8 @@ import test.mypac.MemberDTO;
 public class MainClass06 {
 	public static void main(String[] args) {
 		
-		//MemberDto 객체 생성해서 참조값을 dto1이라는 이름의 지역변수에 담기
+		//MemberDTO 객체 생성해서 참조값을 dto1이라는 이름의 지역변수에 담기
+		//new MemberDTO(~)가 의미하는 바! 1.참조값을 의미 2.생성자를 호출해준다.
 		MemberDTO dto1 = new MemberDTO(1,"김구라","연남동");
 		MemberDTO dto2 = new MemberDTO(2,"해골","행신동");
 		

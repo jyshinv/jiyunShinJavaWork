@@ -30,10 +30,10 @@ public class MainClass04 {
 	
 	
 		/*
-		 * int type과 int type을 연산하면 결과는 int type만 나온다. 만약 정확한 실수 값을 얻고 싶음ㄴ 연산에 참여하는 데이터
+		 * int type과 int type을 연산하면 결과는 int type만 나온다. 만약 정확한 실수 값을 얻고 싶음 연산에 참여하는 데이터
 		 * 중에 어느 하나가 실수 type이 되어야 실수 type이 결과로 나온다.
 		 */
-	
+
 
 	}
 }

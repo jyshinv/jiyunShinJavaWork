@@ -10,10 +10,5 @@ public class MainClass {
 		//여기서 붉은 색은 예약어를 의미한다.
 		System.out.println("Hello, World!");
 		
-		
-		
-		
-		
-		
 	}
 }
