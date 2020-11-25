@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 /*
  * 3. 비교 연산자 테스트

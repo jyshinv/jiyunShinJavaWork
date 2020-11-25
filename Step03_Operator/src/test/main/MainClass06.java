@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 /*
 6. 3항 연산자 테스트 

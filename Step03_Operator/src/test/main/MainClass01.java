@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 /*
  * 1. 산술 연산자 테스트

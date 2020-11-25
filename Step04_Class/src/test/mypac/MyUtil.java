@@ -1,6 +1,8 @@
 package test.mypac;
 /*
 static 자원을 포함하는 용도로 사용해보기
+static 붙은 메소드나, 필드를 static 메소드/필드 라고 말하고
+static이 붙지 않은 메소드나, 필드를 non-static 메소드/필드 라고 말한다.
 */
 public class MyUtil {
 	

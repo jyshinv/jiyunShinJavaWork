@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 
 public class MainClass04 {
@@ -15,18 +16,18 @@ public class MainClass04 {
 		int kor = 100;
 		int math = 90;
 		
-		
 		//2. eng, kor, math 세 점수의 합을 구해서 sum이라는 이름의 지역 변수에 담아 보세요.
 		int sum = eng + kor + math;
 		
 		//3. eng, kor, math의 평균값을 구해서 avg라는 이름의 지역 변수에 담아보세요.
-		double avg = sum/3;  			//sum과 3 둘다 int type => 연산 결과는 int type으로 나옴
-		double realavg = sum/3.0;       //3을 실수로 만들어 주었다.
-		double realavg2 = (double)sum/3; //sum을 실수로 만들어 주었다.
+		double avg = sum/3;  //sum과 3 둘다 int type => 연산 결과는 int type으로 나옴
+		double realavg = sum/3.0;//3을 실수로 만들어 주었다. => 연산 결과는 double type으로 나옴
+		double realavg2 = (double)sum/3;//sum을 실수로 만들어 주었다. => 연산 결과는 double type으로 나옴 
 	
 		//4. avg 안에 있는 값을 콘솔창에 출력해보세요.
-		System.out.println(avg);
-		System.out.println(realavg);
+		System.out.println(avg); //96.0
+		System.out.println(realavg); //96.66666666666667
+		System.out.println(realavg2); //96.66666666666667
 	
 	
 		/*

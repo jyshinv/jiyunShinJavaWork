@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 /*
  * [자바 참조 데이터 type]
@@ -13,6 +14,9 @@ package test.main;
  * */
 public class MainClass07 {
 	public static void main(String[] args) {
+		//String type은 참조 type인데 선언만 하고 값 대입 안하면 생성이 될까?
+		String newName; //참조 데이터 타입도 선언 하고 값 대입을 하지 않으면 생성되지 않는다.  
+		
 		//김구라 라는 String type 참조값을 name이라는 지역변수에 대입
 		String name = "김구라";
 		//name이라는 참조값을 myName이라는 새로운 변수에 대입
@@ -24,6 +28,7 @@ public class MainClass07 {
 		//String type 참조값이 들어가 갈수 있는 지역변수 name을 빈상태로 만들기
 		//null은 참조 데이터 type이 들어갈 수 있는 빈 공간을 의미한다.
 		name = null;
+		
 
 	}
 

@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 
 public class MainClass03 {
@@ -18,11 +19,6 @@ public class MainClass03 {
 		//3.
 		//범위가 넓은 double type 변수에 있는 값을 float type에 담을 때는 
 		//casting이 필요하다. 
-		float b = (float)num1; //b에는 10.1
-		
-		
-		
-	
-
+		float b = (float)num2; //b에는 10.2
 	}
 }

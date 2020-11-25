@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 /*
  *  5. 대입 연산자

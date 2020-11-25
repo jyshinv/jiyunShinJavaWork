@@ -1,4 +1,5 @@
-package test.main; //src/test/main이라는 패키지가 만들어진다.
+/*블로그 ok*/
+package test.main; //src/test/main (src폴더 내 test 폴더 내 main폴더) 패키지가 만들어진다.
 
 public class MainClass01 {
 	//run 했을 때 실행순서가 시작되는 특별한 main 메소드
@@ -28,18 +29,25 @@ public class MainClass01 {
 		//지금 작성하고 있는 프로그램도 하나의 실행 프로그램!
 		//실행 한다면 운영체제에서 프로세스를 하나 할당해준다.
 		
-		//값 확인하는 방법? - 
+		//값 확인하는 방법? - 디버깅!!
 		//정수형 변수 선언하고 값 대입하기
 		byte a = 10;
 		short b = 10;
 		int c = 10;
-		long d = 10;
+		long d = 10l;
+		long d1 = 10L;
+		
+		//long형은 l혹은 L 생략 가능
+		long d2 = 10;
 		
 		//실수형 변수 선언하고 값 대입하기
-		float e = 10.1f;
+		float e = 10.1F;
+		float e1 = 10.1f;
 		double f = 10.1d;
+		double f1 = 10.1D;
+		
+		//단, double형에 한해서 d 혹은 D 생략 가능하다.(float은 생략불가!)
 		double g = 10.1;
-		long l = 1000L;
 		
 	}
 }

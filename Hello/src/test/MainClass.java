@@ -1,6 +1,14 @@
+/*블로그 등록 ok*/
 package test;
 
+/*
+1. 파일명과 클래스 이름은 같아야한다.
+2. run했을 때 실행의 흐름이 시작되는 특별한 main메소드
+3. System.out.println의 의미는 콘솔창에 출력하여라 라는 의미이다. 
+*/
+
 //MainClass 라는 이름의 클래스
+//파일명과 클래스이름은 같아야한다.
 public class MainClass {	
 	//main 이라는 이름의 메소드 (함수)
 	public static void main(String[] args) {
