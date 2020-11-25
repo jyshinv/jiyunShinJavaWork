@@ -31,6 +31,8 @@ public class MainClass09 {
 		Computer c2 = new Computer(new Cpu(), new Memory(), new HardDisk());
 		c2.playGame();
 		c2.sendEmail(addr);
+		
+		
 	}
 	
 
