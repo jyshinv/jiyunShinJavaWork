@@ -6,8 +6,10 @@ public class MainClass02 {
 		House h1 = new House();
 		String name = "신지윤";
 		h1.relax(name);
+		h1.relax(name);
+		h1.relax(name);
 	
-		
+		System.out.println("-------------------------------");
 		//집에서 100번 쉬어보세요.
 		for(int i=0; i<100; i++) {
 			h1.relax(name);

@@ -24,6 +24,7 @@ public class Car {
 		System.out.println("달려요!");
 	}
 	
+	//엉덩이를 따뜻하게 하는 메소드(기능)
 	public void hotHip() {
 		System.out.println("엉덩이가 따뜻해져요");
 	}

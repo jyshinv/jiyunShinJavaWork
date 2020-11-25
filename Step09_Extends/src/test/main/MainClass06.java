@@ -10,9 +10,14 @@ public class MainClass06 {
 		
 		
 		//usePhone 메소드를 호출하는 코드를 아래에 작성해보세요.
-		MainClass06.usePhone(new Phone());
-		MainClass06.usePhone(new HandPhone());
-		MainClass06.usePhone(new SmartPhone());
+		MainClass06.usePhone(new Phone()); 
+		MainClass06.usePhone(new HandPhone()); 
+		MainClass06.usePhone(new SmartPhone()); 
+		
+		//실행결과?
+		//전화를 걸어요!
+		//이동중에 전화를 걸어요
+		//이동중에 전화를 걸어요
 		
 	}
 	
@@ -20,12 +25,6 @@ public class MainClass06 {
 	public static void usePhone(Phone p) {
 		//인자로 전달되는 참조값을 이용해서 메소드 호출하기
 		p.call();
-		
-		//만일 p앞에 있는 값이 HandPhone type이 맞다면...
-		if(p instanceof HandPhone) { //instanceof 라는 연산자는 true or false를 리턴해줌 
-			HandPhone p2 = (HandPhone)p;
-			p2.mobileCall();
-		}
 	}
 
 }

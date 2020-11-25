@@ -7,7 +7,7 @@ public class MainClass05 {
 		*/
 		
 		Member mem1=new Member();
-		mem1.name="신지윤";
+		mem1.name="김재성";
 		mem1.num=1;
 		mem1.addr="연남동";
 		

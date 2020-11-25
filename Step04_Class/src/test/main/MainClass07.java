@@ -1,5 +1,12 @@
 package test.main;
 
+/*
+생성자를 이용해 
+필드에 값을 대입하는 방법과
+
+setter을 이용해
+필드에 값을 대입하는 방법을 비교해보자!
+*/
 import test.mypac.MemberDTO;
 
 public class MainClass07 {

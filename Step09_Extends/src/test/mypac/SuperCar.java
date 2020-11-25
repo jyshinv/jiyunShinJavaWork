@@ -1,3 +1,4 @@
+/*선생님 코드랑 비교 끝*/
 package test.mypac;
 
 import test.auto.Car;

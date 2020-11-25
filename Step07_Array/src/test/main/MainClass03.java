@@ -9,7 +9,7 @@ public class MainClass03 {
 		}
 		
 		//names 배열에 저장된 문자열을 순서대로 콘솔창에 출력하기
-		//향상된 for문 
+		//향상된 for문  arr이 요소 자체가 된다. 
 		for(String arr:names) {
 			System.out.println(arr);
 		}

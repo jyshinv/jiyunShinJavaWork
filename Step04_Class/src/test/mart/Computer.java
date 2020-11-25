@@ -13,6 +13,7 @@ public class Computer {
 		this.hardDisk = hardDisk;
 	}
 	
+	//메소드
 	public void playGame() {
 		System.out.println("게임을 해요!");
 	}

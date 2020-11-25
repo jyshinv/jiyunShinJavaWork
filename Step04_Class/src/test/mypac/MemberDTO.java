@@ -42,7 +42,7 @@ public class MemberDTO {
 		System.out.println("MemberDto()생성자가 호출됨!");
 		 //this.num, this.name, this.addr에 아무것도 없음 0nullnull이 출려될것임
 		System.out.println(this.num+this.name+this.addr);
-		//매개변수를 통해 this.num, this.name, this.addr에 값을 넣어줌
+		//매개변수를 통해 this.num, this.name, this.addr에 값을 넣어줌(생상자로 전달받은 값을 필드에 저장한다.)
 		this.num = num; 
 		this.name = name;
 		this.addr = addr;

@@ -6,8 +6,8 @@ import test.mypac.Phone;
 public class MainClass01 {
 	//run했을 때 application의 시작점 도입점이 되는 main 메소드
 	public static void main(String[] args) {
-		Phone p1 = new Phone(); //run 하면  Phone객체가 만들어지고 참조값이 p에 저장된다. 
-		HandPhone p2 = new HandPhone();
+		Phone p1 = new Phone(); //run 하면  Phone객체가 만들어지고 참조값이 p1에 저장된다. 
+		HandPhone p2 = new HandPhone(); //run 하면 HandPhone 객체가 만들어지고 참조값이 p2에 저장된다.
 		
 		//부모클래스(Phone) 에 정의된 메소드 호출가능
 		p2.call();

@@ -14,6 +14,7 @@ public class MainClass09 {
 		 */
 		String addr = "oli999@naver.com";
 		
+		
 		//cpu, hardDisk, memory 객체 생성
 		Cpu cpu = new Cpu();
 		HardDisk hardDisk = new HardDisk();
@@ -26,6 +27,10 @@ public class MainClass09 {
 		c1.playGame();
 		c1.sendEmail(addr);
 		
+		//위의 3줄은 아래와 같이 표현할 수도 있다.
+		Computer c2 = new Computer(new Cpu(), new Memory(), new HardDisk());
+		c2.playGame();
+		c2.sendEmail(addr);
 	}
 	
 
