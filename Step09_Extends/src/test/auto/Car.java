@@ -1,6 +1,7 @@
 package test.auto;
 
 /*
+ * http://tcpschool.com/java/java_modifier_accessModifier -> 접근지정자 좋은 예시
 접근지정자 4가지
 1. public - 모두 공개
 2. protected - in package or another package + child (같은 패키지라면 공개하겠다 or 다른 패키지더라도 상속관계이면 공개하겠다.)
