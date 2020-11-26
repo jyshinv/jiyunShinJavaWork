@@ -16,7 +16,7 @@ boolean : Boolean
 
 [참조 데이터 타입의 특징]
 1. 참조 데이터 타입은 대응되는 기본 데이터 타입을 wrapped하고 있다.
-2. 그동안의 객체 선언 String a = new String("안녕") 과는 다르게 String a = "안녕"; 으로 만들어준다. 
+2. 그동안의 객체 선언 String a = new String("안녕") 과는 다르게 String a = "안녕"; 으로 써도 된다.
 
 [참고]
 해당 참조 데이터 타입에 커서를 갖다 댄 후 shift+f2를 누르면 api로 이동한다. 

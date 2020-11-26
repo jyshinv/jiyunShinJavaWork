@@ -1,10 +1,26 @@
 package test.mypac;
 
-public class SmartPhone extends HandPhone{
+//SmartPhone 클래스를 종단 클래스로 만드는 final 얘약어 --> fianl은 고자를 만들어버린다.
+public final class SmartPhone extends HandPhone{
+	
+	//디폴트 생성자
+	public SmartPhone() {
+		System.out.println("SmartPhone()생성자 호출됨");
+	}
 
 	//SmartPhone이 정의한 메소드 
 	public void doInternet() {
 		System.out.println("인터넷을 해요");
+	}
+	
+	//SmartPhone메소드에서 부모클래스와 자기자신클래스 메소드 호출하기
+	public void callMethod() {
+		call(); //SmartPhone클래스엔 call()함수가 없으니 부모의 call()함수가 호출된다.
+		mobileCall(); //SmartPhone 클래스엔 mobileCall()함수가 없으니 부모의 mobileCall()함수가 호출된다. 
+		super.takePicture(); //SmartPhone클래스엔 takePicture()함수가 있으므로(재정의함) 부모클래스의 takePicture()를 호출하고 싶을땐 super예약어를 이용한다.
+		this.takePicture(); //부모클래스의 takePicture()가 아닌 SmartPhone클래스의 takePicture을 호출하고 싶을 땐 this 예약어를 사용한다.
+		takePicture(); //위에 1줄에서 this는 생략해도 된다. 이경우 부모클래스에도, 자식클래스에도 takePicture이 존재하므로 자식의 takePicture가 호출된다.
+		
 	}
 	
 	//HandPhone으로 부터 메소드 상속을 받긴 하겠지만
