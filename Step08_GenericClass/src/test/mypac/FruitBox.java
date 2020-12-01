@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.mypac;
 
 public class FruitBox<T>{

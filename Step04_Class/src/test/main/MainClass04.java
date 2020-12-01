@@ -1,3 +1,4 @@
+/*MainClass05와 내용 비슷해서 짬뽕해서 블로그 ok*/
 package test.main;
 
 //클래스를 다른 패키지에 선언했으므로 import 해줘야 한다.

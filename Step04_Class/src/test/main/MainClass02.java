@@ -1,10 +1,10 @@
+/*블로그 ok*/
 package test.main;
 
 import test.mypac.Car;
 /*
 프로그래밍의 목적이 "달리기" 라면?
 목적을 달성해보세요.
-
 */
 public class MainClass02 {
 	
@@ -15,7 +15,7 @@ public class MainClass02 {
 		car1.drive();
 		//car1안에 들어있는 참조값을 이용해서 name이라는 필드에 String type 참조값 넣어주기
 		car1.name= "프라이드";
-		//car1안에 들어있는 참조값을 이용해서 cc라는 필드에 int type의 참조값 넣어주기
+		//car1안에 들어있는 참조값을 이용해서 cc라는 필드에 int type의 값 넣어주기
 		car1.cc = 1000;
 		
 		//car2 객체를 생성해보자!

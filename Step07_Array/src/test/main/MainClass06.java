@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 
 import test.mypac.*;
@@ -7,7 +8,8 @@ public class MainClass06 {
 		//가로 세로 길이가 200과 100
 		//가로 세로 길이가 300과 200
 		//인 사각형 3개가 있다.
-		//각각에 대응되는 Rect 객체를  3개 생성해서 참조값을 rect1, rect2, rect3라는 지역변수에 담아보세요.
+		//각각에 대응되는 Rect 객체를  3개 생성해서
+		//참조값을 rect1, rect2, rect3라는 지역변수에 담아보세요.
 		Rect rect1 = new Rect(100,100);
 		Rect rect2 = new Rect(200,100);
 		Rect rect3 = new Rect(300,200);

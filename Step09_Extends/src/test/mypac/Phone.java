@@ -4,6 +4,7 @@ package test.mypac;
 //따라서 Ojbect 클래스를 상속받을 거라면 생략이 가능하다.
 public class Phone{
 	
+
 	//디폴트 생성자
 	public Phone() {
 		System.out.println("Phone 생성자 호출됨");

@@ -40,5 +40,9 @@ public class Car {
 		System.out.println("달려요!");
 	}
 	
+	public void test() {
+		System.out.println("테스트당");
+	}
+	
 
 }

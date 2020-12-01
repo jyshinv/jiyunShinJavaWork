@@ -1,3 +1,4 @@
+/*블로그ok*/
 package test.main;
 
 import test.mypac.MemberDTO;
@@ -6,7 +7,8 @@ public class MainClass06 {
 	public static void main(String[] args) {
 		
 		//MemberDTO 객체 생성해서 참조값을 dto1이라는 이름의 지역변수에 담기
-		//new MemberDTO(~)가 의미하는 바! 1.참조값을 의미 2.생성자를 호출해준다.(생성자가 없으면 defalut 생성자를 호출해준다.)
+		//new MemberDTO(~)가 의미하는 바! 
+		//1.참조값을 의미 2.생성자를 호출해준다.(생성자가 없으면 defalut 생성자를 호출해준다.)
 		MemberDTO dto1 = new MemberDTO(1,"김구라","연남동");
 		MemberDTO dto2 = new MemberDTO(2,"해골","행신동");
 		
@@ -16,7 +18,8 @@ public class MainClass06 {
 		//dto1.num으로 접근하지 못한다.
 		//dto1.num=3 //오류남
 		//dto1.num; //오류남
-		//따라서 num값에 대입하거나, num값을 불러오고 싶을 때는 getter, setter 메소드를 사용한다.
+		//따라서 num값에 대입하거나,num값을 불러오고 싶을 때는
+		//getter, setter 메소드를 사용한다.
 		dto1.setNum(3); //num값에 대입하기
 		System.out.println(dto1.getNum()); //num값을 불러서 출력해보기
 		

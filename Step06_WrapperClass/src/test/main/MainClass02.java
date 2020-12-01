@@ -1,3 +1,4 @@
+/*블로그 추가 완료*/
 package test.main;
 
 public class MainClass02 {

@@ -1,6 +1,10 @@
+/*블로그ok*/
 package test.main;
 
-import test.mart.*;
+import test.mart.Computer;
+import test.mart.Cpu;
+import test.mart.HardDisk;
+import test.mart.Memory;
 
 public class MainClass09 {
 	

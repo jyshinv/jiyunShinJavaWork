@@ -1,4 +1,5 @@
 package test.mypac;
+/*블로그 ok*/
 /*
 [클래스의 용도]
 
