@@ -70,7 +70,9 @@ public class MainClass03 {
 			// ?에 순서대로 값을 바인딩 하기
 			pstmt.setString(1, name); //미완성된 sql문의 첫번째 물음표에 name
 			pstmt.setString(2, addr); //미완성된 두번째 물음표에 addr
+			
 			//INSERT, UPDATE, DELECT한다면 executeUpdate()메소드를 쓴다.update row개수를 반환
+			//완성된 sql문을 수행하고 변화된 row의 개수를 리턴 받는다. 
 			flag=pstmt.executeUpdate(); 
 			
 			System.out.println("회원 정보를 저장했습니다.");

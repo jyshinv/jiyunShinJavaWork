@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Scanner;
 
+import test.member.dto.MemberDto;
 import test.util.DBConnection;
-import test.util.MemberDto;
 
 /*
 Scanner 객체를 이용해서 검색할 회원의 번호를 입력받아서 

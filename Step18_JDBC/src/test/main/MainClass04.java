@@ -15,8 +15,7 @@ addr을 노량진으로 수정하는 코드를 작성해보세요.
 public class MainClass04 {
 	public static void main(String[] args) {
 		String num = "804";
-		String addr = "노량진"
-				+ "";
+		String addr = "노량진";
 
 		// DB 연결 객체를 담을 지역변수
 		Connection conn = null;
@@ -59,6 +58,7 @@ public class MainClass04 {
 			pstmt.setString(2, num); // 미완성된 두번째 물음표에 num
 			
 			//INSERT, UPDATE, DELECT한다면 executeUpdate()메소드를 쓴다. update한 row개수를 반환해줌
+			//완성된 sql문을 수행하고 변화된 row의 개수를 리턴받는다. 
 			flag = pstmt.executeUpdate(); 
 
 			System.out.println("회원 정보를 수정했습니다.");

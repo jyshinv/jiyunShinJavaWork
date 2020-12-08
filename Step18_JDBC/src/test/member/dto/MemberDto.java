@@ -1,4 +1,4 @@
-package test.util;
+package test.member.dto;
 
 public class MemberDto {
 	//필드

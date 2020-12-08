@@ -41,6 +41,7 @@ public class MainClass05 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {
+			//마무리작업
 				try {
 					if(conn != null) conn.close();
 					if(pstmt != null) pstmt.close();

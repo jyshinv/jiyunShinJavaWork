@@ -75,6 +75,7 @@ public class MainClass01 {
 			//만약 rs가 null이 된채로 rs.close()를 수행하면 nullPointerException이 되버려
 			//catch문으로 이동한다. 
 			try {
+				//마무리작업
 				if(rs!=null) rs.close();
 				if(pstmt!=null) pstmt.close();
 				if(conn !=null)conn.close();

@@ -31,7 +31,7 @@ public class MainClass06_2 {
 		System.out.print("회원번호를 입력하세요:");
 		int snum = scan.nextInt();
 
-		// 필요한
+		// 필요한 객체를 담을 지역변수 미리 만들기 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -49,22 +49,31 @@ public class MainClass06_2 {
 			// ?에 값 바인딩하기
 			pstmt.setInt(1, snum);
 			
+			//쿼리문 수행하고 결과를 ResultSet으로 받아오기 
 			rs = pstmt.executeQuery();
-
-			//2번 답 
-			//검색해오려는 ResultSet은 어짜피 row한줄 이므로 rs.next()가 false일때까지 while문을 돌릴 필요가 없다.
-			if(rs.next()) {
-				//select된 row가 존재한다면 커서가 위치한 곳의 데이터 얻어오기 
-				int num = rs.getInt("num");
-				String name = rs.getString("name");
-				String addr = rs.getString("addr");
-				System.out.println("번호:" + num + ", 이름: " + name + ", 주소:" + addr);	
-			}else {
-				System.out.println(snum+"번 회원은 존재하지 않습니다.");				
-			}
 			
+			/*
+			member table에서 num은 Primary key값이다.
+			따라서 SELECT 된 결과 row의 개수는 0이거나 1이 된다. 
+			검색해오려는 ResultSet은 어짜피 row 1줄을 넘지 않으므로
+			rs.next()가 false일때까지 while문을 돌릴 필요가 없다.
+			 */
+			//3번 답 (3번답은 catch문까지 이어짐!)
+			//rs.next()를 통해 커서 내려주기
+			//커서를 내렸는데 데이터가 있다면 아래 내용 출력 없다면 catch문으로 감 
+			rs.next();
+			int num = rs.getInt("num");
+			String name = rs.getString("name");
+			String addr = rs.getString("addr");
+			System.out.println("번호:" + num + ", 이름: " + name + ", 주소:" + addr);	
+
 		} catch (Exception e) {
-			e.printStackTrace();
+			//예외처리를 이용한 답이다.다만 3번답을 쓸때는 e.printStackTrace()를 쓰면 안된다.
+			//예외처리를 이용해 catch문으로 넘어오게 만들었기 때문에 e.printStackTrace()를 쓰면 예외처리 내용도 같이 출력되버린다. 
+			//2번 답
+			//e.printStackTrace();
+			System.out.println(snum+"번 회원은 존재하지 않습니다.");				
+			
 		} finally {
 			try {
 				if (conn != null)

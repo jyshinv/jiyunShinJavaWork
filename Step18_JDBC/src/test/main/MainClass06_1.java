@@ -32,7 +32,7 @@ public class MainClass06_1 {
 		System.out.print("회원번호를 입력하세요:");
 		int snum = scan.nextInt();
 
-		// 필요한
+		// 필요한 객체를 담을 지역변수 미리 만들기 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -50,8 +50,13 @@ public class MainClass06_1 {
 			// ?에 값 바인딩하기
 			pstmt.setInt(1, snum);
 			
+			//쿼리문 수행하고 결과를 ResultSet으로 받아오기 
 			rs = pstmt.executeQuery();
 
+			/*
+			member table에서 num은 Primary key값이다.
+			따라서 SELECT 된 결과 row의 개수는 0이거나 1이 된다. 
+			*/
 			//1번답 
 			while (rs.next()) { //rs.next()를 어디에 적든 커서가 내려가니 조심!
 				flag=1;

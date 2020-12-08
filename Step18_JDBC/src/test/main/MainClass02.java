@@ -61,11 +61,11 @@ public class MainClass02 {
 
 			// rs.next()메소드가 false를 리턴할때 까지 while 반복문 돌기
 			while (rs.next()) {
-				// 현재 커서가 위치한 곳에서 num칼럼의 값을 정수로 얻어내기
+				// 현재 커서가 위치한 곳에서 empno칼럼의 값을 정수로 얻어내기
 				int empno = rs.getInt("empno");
-				// 현재 커서가 위치한 곳에서 name 칼럼의 값을 문자로 얻어내기
+				// 현재 커서가 위치한 곳에서 ename 칼럼의 값을 문자로 얻어내기
 				String ename = rs.getString("ename");
-				// 현재 커서가 위치한 곳에서 name 칼럼의 값을 문자로 얻어내기
+				// 현재 커서가 위치한 곳에서 deptno 칼럼의 값을 문자로 얻어내기
 				int deptno = rs.getInt("deptno");
 				System.out.println(empno + "|" + ename + "|" + deptno);
 			}
