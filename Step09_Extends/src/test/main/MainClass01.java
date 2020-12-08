@@ -1,3 +1,4 @@
+/*블로그 ok*/
 package test.main;
 
 import test.mypac.HandPhone;

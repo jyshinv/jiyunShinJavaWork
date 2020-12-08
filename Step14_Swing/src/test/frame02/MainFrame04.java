@@ -67,7 +67,7 @@ public class MainFrame04 extends JFrame implements ActionListener {
 		f.setVisible(true);
 	}
 
-	//MainFrame04 가 implements ActionListener 했으므로 강제 구현된 메소드 
+	//MainFrame04 가 implements ActionListener 했으므로 강제 구현된 메소드 actionPerformed()...
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		//이벤트가 일어난 UI(Button)의 ActionCommand 값을 읽어온다.

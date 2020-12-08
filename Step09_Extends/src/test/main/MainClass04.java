@@ -1,6 +1,6 @@
 package test.main;
 
-import test.mypac.*;
+import test.mypac.SmartPhone;
 
 public class MainClass04 {
 	public static void main(String[] args) {

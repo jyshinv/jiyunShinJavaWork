@@ -15,10 +15,4 @@ public class Phone{
 		System.out.println("전화를 걸어요!");
 	}
 	
-	
-	public void test() {
-		//shift +f2 로 Object에 관한 설명서를 열어 아래 코드가 왜 가능한지 생각해보기
-		Object a = "Hello";
-	}
-
 }

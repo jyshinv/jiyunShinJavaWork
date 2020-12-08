@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 public class MainFrame02 extends JFrame {
 
 	// 필드
-	// 리스너 객체 3개 생성하기
+	// 필드에 리스너 객체 3개 생성하기
 	//new+익명클래스 사용해서 리스너 생성
 	ActionListener listenerSend = new ActionListener() {
 		@Override

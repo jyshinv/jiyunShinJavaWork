@@ -9,10 +9,10 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-public class MainFrame extends JFrame implements ActionListener{
+public class MainFrame02 extends JFrame implements ActionListener{
 
 	//생성자
-	public MainFrame(String title) {
+	public MainFrame02(String title) {
 		super(title);
 		//레이아웃 지정
 		setLayout(new FlowLayout());
@@ -83,7 +83,7 @@ public class MainFrame extends JFrame implements ActionListener{
 	}
 	
 	public static void main(String[] args) {
-		MainFrame f=new MainFrame("메인 프레임");
+		MainFrame02 f=new MainFrame02("메인 프레임");
 		f.setBounds(100,100,300,300);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);

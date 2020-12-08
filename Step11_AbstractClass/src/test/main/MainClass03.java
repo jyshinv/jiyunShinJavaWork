@@ -2,6 +2,13 @@ package test.main;
 
 import test.mypac.*;
 
+/*
+InnerClass에 한해서!!!!!!!
+static 으로 선언된 메인메소드 내에서는 static 자원만 사용할 수 있기 때문에
+static을 붙여주어야한다!
++메소드도 마찬가지!
+(단, 같은 클래스 공간 내에서!)
+*/
 public class MainClass03 {
 	
 	//클래스 안에 정의된 Inner Class (★내부클래스를 static메소드에서 쓰려면 static을 붙여줘야한다. (외부클래스는 붙여주지 않아도 쓸 수 있음!))

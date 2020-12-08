@@ -39,8 +39,9 @@ public class MainClass01 {
 		//프레임을 보이게 한다. 
 		f.setVisible(true);
 		
+		//리스너 만들기 
 		//ActionListener  인터페이스 type 의 참조값 얻어내기 
-		//ActionListener 인터페이스를 익명클래스를 이용하여 재정의하기 
+		//ActionListener 인터페이스를 익명클래스를 이용하여 인터페이스의 메소드 재정의하기 
 		ActionListener listener=new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -51,6 +52,7 @@ public class MainClass01 {
 			}
 		};
 		
+		//버튼에 리스너 등록하기1
 		//버튼에 액션 리스너 등록하기, addActionListener함수에 listener 객체를 을 넣는다 
 		btn.addActionListener( listener );
 		
@@ -61,7 +63,8 @@ public class MainClass01 {
 		//프레임에 추가하기
 		f.add(btn2);
 		
-		//버튼에 액션 리스너 등록하기, 
+		//버튼에 리스너 등록하기2
+		//버튼에 액션 리스너 바로 등록하기, 
 //		btn2.addActionListener(new ActionListener() {
 //			@Override
 //			public void actionPerformed(ActionEvent e) {
@@ -69,6 +72,7 @@ public class MainClass01 {
 //			}
 //		});
 		
+		//버튼에 리스너 등록하기3
 		//람다식을 활용하면 위의 코드를 아래와 같이 표현가능
 		btn2.addActionListener((e)->{
 			JOptionPane.showMessageDialog(f, "약올리지마!");

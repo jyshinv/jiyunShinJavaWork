@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+//JFrame을 직접 extends해서 사용해보자 
 public class MainFrame01 extends JFrame {
 	//생성자
 	public MainFrame01(String title) {
@@ -28,6 +29,7 @@ public class MainFrame01 extends JFrame {
 		add(updateBtn);
 		add(deleteBtn);
 		
+		//버튼에 리스너 등록방법1 (리스너 생성과 동시에 버튼에 등록)
 		//버튼에 리스너 객체 new+익명클래스로 등록
 		sendBtn.addActionListener(new ActionListener() {
 			@Override
@@ -36,11 +38,13 @@ public class MainFrame01 extends JFrame {
 			}
 		});
 		
+		//버튼에 리스너 등록방법2 (리스너 생성과 동시에 버튼에 등록)
 		//버튼에 리스너 객체 람다식으로 등록하기 
 		updateBtn.addActionListener((e)->{
 			JOptionPane.showMessageDialog(MainFrame01.this, "수정완료");
 		});
 		
+		//버튼에 리스너 등록방법2 (리스너 생성과 동시에 버튼에 등록)
 		//버튼에 리스너 객체 람다식으로 등록
 		deleteBtn.addActionListener((e)->{
 			JOptionPane.showMessageDialog(MainFrame01.this, "삭제완료");

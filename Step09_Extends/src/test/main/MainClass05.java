@@ -19,7 +19,10 @@ public class MainClass05 {
 		
 		//아래예제와 같은 상황을 조심할 것!
 		Phone p1 = new Phone(); 
-		SmartPhone p2 = (SmartPhone)p1; //p1은 Phone 타입(부모) 이므로 형변환 해주어야한다. 그러나 이 코드는 실행해보면 오류가 난다. p1은 원래부터 스마트폰 기능이 없다.(그림으로 이해하기!) 
+		
+		//p1은 Phone 타입(부모) 이므로 형변환 해주어야한다. 그러나 이 코드는 실행해보면 오류가 난다. p1은 원래부터 스마트폰 기능이 없다.(그림으로 이해하기!) 
+		SmartPhone p2 = (SmartPhone)p1; 
+		
 		p2.doInternet(); 
 	}
 
