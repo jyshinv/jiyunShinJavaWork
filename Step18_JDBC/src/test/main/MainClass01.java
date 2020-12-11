@@ -73,7 +73,8 @@ public class MainClass01 {
 			//sql문에 오타가 발생하거나 문제가 생겨
 			//ResertSet rs에 아무 row도 못담아오게 되면 지역변수에서 rs에 null을 넣어놨기 때문에 null이 되버리는데
 			//만약 rs가 null이 된채로 rs.close()를 수행하면 nullPointerException이 되버려
-			//catch문으로 이동한다. 
+			//catch문으로 이동한다.그러면 pstmt.close()와 conn.close()가 만약 null이 아니어서 수행되어야하는 상황에서  
+			//pstmt.close()와 conn.close()가 수행이 되지 않는다. 따라서 null체크를 꼭 해주어야한다.
 			try {
 				//마무리작업
 				if(rs!=null) rs.close();

@@ -58,7 +58,7 @@ public class MainClass01 {
 		
 		//버튼 객체 생성해서
 		JButton btn2=new JButton("merong");
-		//위치와 크기를 설정하고
+		//버튼의 위치와 크기를 설정하고
 		btn2.setBounds(200,50,100,40);
 		//프레임에 추가하기
 		f.add(btn2);

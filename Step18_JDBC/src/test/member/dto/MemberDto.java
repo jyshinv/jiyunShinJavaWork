@@ -6,9 +6,16 @@ public class MemberDto {
 	private String name;
 	private String addr;
 	
-	//생성자
+	//디포트 생성자
 	public MemberDto() {}
 
+	
+	//매개변수가 있는 생성자
+	public MemberDto(int num,String name,String addr) {
+		this.num=num;
+		this.name=name;
+		this.addr=addr;
+	}
 	//getter(), setter()
 	public int getNum() {
 		return num;

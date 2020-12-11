@@ -58,7 +58,7 @@ public class MainClass06_2 {
 			검색해오려는 ResultSet은 어짜피 row 1줄을 넘지 않으므로
 			rs.next()가 false일때까지 while문을 돌릴 필요가 없다.
 			 */
-			//3번 답 (3번답은 catch문까지 이어짐!)
+			//2번 답 (2번답은 catch문까지 이어짐!)
 			//rs.next()를 통해 커서 내려주기
 			//커서를 내렸는데 데이터가 있다면 아래 내용 출력 없다면 catch문으로 감 
 			rs.next();

@@ -57,7 +57,7 @@ public class MainFrame01 extends JFrame {
 	//main 메소드
 	public static void main(String[] args) {
 		MainFrame01 f=new MainFrame01("메인프레임");
-		//위치와 크기 지정
+		//프레임의 위치와 크기 지정함. 프레임이 뜰 화면에서  100,100 떨어진 곳에 위치하고 크기는 500,300을 가짐
 		f.setBounds(100, 100, 500, 300);
 		
 		//프레임을 닫으면 프로세스가 종료되도록 (앱이 종료되도록)

@@ -20,6 +20,15 @@ pstmt.setString(2,"nrg");
 pstmt.setInt(3,100);
 flag=pstmt.executeUpdate();
 
+[공식처럼 외워두기]
+SELECT
+.executeQuery()
+ResultSet
+
+INSERT, UPDATE, DELETE
+.executeUpdate()
+int
+
 
 */
 

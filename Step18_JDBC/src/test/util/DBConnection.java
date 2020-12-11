@@ -19,7 +19,7 @@
 //		String addr = "노량진"
 //				+ "";
 //
-//		//이 과정을 DBConnection클래스를 만들어서 확 줄일 순 없을까???? --> DBConncetion클래스로 구현해보자!!
+//		//★이 과정을 DBConnection클래스를 만들어서 확 줄일 순 없을까???? --> DBConncetion클래스로 구현해보자!!
 //		// DB 연결 객체를 담을 지역변수
 //		Connection conn = null;
 //		try {

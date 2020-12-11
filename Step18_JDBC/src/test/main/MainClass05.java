@@ -14,7 +14,7 @@ member 테이블에서
 
 public class MainClass05 {
 	public static void main(String[] args) {
-		//삭제할 회원의 번호
+		// 필요한 참조갑을 담을 지역 변수 미리 만들고 초기화 하기
 		int num=801;
 		
 		//필요한

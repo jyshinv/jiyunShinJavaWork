@@ -73,10 +73,7 @@ public class MainClass02 {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			// sql문에 오타가 발생하거나 문제가 생겨
-			// ResertSet rs에 아무 row도 못담아오게 되면 지역변수에서 rs에 null을 넣어놨기 때문에 null이 되버리는데
-			// 만약 rs가 null이 된채로 rs.close()를 수행하면 nullPointerException이 되버려
-			// catch문으로 이동한다.
+
 			try {
 				if (rs != null)
 					rs.close();
